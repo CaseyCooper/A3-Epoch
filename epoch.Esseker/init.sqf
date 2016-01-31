@@ -10,10 +10,10 @@ if (isServer) then {
 };
 //service point repair/rearm
 if(hasInterface) then{
-//	[] execVM "addons\service_point\service_point.sqf";
+	[] execVM "addons\service_point\service_point.sqf";
 //status bar
 	[] execVM "addons\Status_Bar\init_statusBar.sqf";
 };
 //removes crypto when service point is used
-//[] execVM "custom\HALV_takegive_crypto_init.sqf";
+	[] execVM "custom\HALV_takegive_crypto_init.sqf";
 
