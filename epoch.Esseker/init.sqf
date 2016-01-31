@@ -8,3 +8,9 @@ execVM "blckClient.sqf";
 if (isServer) then {
 	execVM "\q\addons\custom_server\init.sqf";
 };
+//service point repair/rearm
+if(hasInterface) then{
+	[] execVM "addons\service_point\service_point.sqf";
+};
+//removes crypto when service point is used
+[] execVM "custom\HALV_takegive_crypto_init.sqf";
