@@ -20,19 +20,11 @@ class Mission
 		"cup_chernarus_config",
 		"A3_Modules_F_Curator_Curator",
 		"a3_characters_f",
-		"A3_Data_F_Curator_Virtual",
-		"A3_Characters_F_BLUFOR",
-		"CUP_A2_EditorObjects",
-		"A3_Structures_F_Walls"
+		"A3_Data_F_Curator_Virtual"
 	};
 	addOnsAuto[]=
 	{
-		"a3_epoch_config",
-		"A3_Characters_F_BLUFOR",
-		"a3_characters_f",
-		"CUP_A2_EditorObjects",
-		"A3_Structures_F_Walls",
-		"esseker"
+		"a3_epoch_config","esseker"
 	};
 	randomSeed=7213714;
 	class Intel
@@ -57,7 +49,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=101;
+		items=100;
 		class Item0
 		{
 			side="CIV";
@@ -2058,181 +2050,10 @@ class Mission
 				};
 			};
 		};
-		class Item100
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={6493.2622,37.48,6094.958};
-					azimut=-149.73903;
-					id=100;
-					side="WEST";
-					vehicle="B_Soldier_F";
-					player="PLAYER COMMANDER";
-					leader=1;
-					skill=0.60000002;
-				};
-			};
-		};
-	};
-	class Vehicles
-	{
-		items=15;
-		class Item0
-		{
-			position[]={6487.811,37.48,6082.5859};
-			azimut=201.31902;
-			id=101;
-			side="EMPTY";
-			vehicle="CUP_A2_fuelstation_build_ep1";
-			skill=0.60000002;
-		};
-		class Item1
-		{
-			position[]={6490.1821,37.48,6088.0596};
-			azimut=-68.279198;
-			offsetY=0.2;
-			id=102;
-			side="EMPTY";
-			vehicle="CUP_A2_fuelstation_feed_ep1";
-			skill=0.60000002;
-		};
-		class Item2
-		{
-			position[]={6491.1646,37.48,6090.3872};
-			azimut=-68.279198;
-			offsetY=0.2;
-			id=103;
-			side="EMPTY";
-			vehicle="CUP_A2_fuelstation_feed_ep1";
-			skill=0.60000002;
-		};
-		class Item3
-		{
-			position[]={6490.8105,37.48,6089.5625};
-			azimut=21.008314;
-			id=104;
-			side="EMPTY";
-			vehicle="CUP_A2_fuelstation_shed_ep1";
-			skill=0.60000002;
-		};
-		class Item4
-		{
-			position[]={6484.6445,37.48,6092.8828};
-			azimut=-68.279198;
-			offsetY=0.2;
-			id=105;
-			side="EMPTY";
-			vehicle="CUP_A2_fuelstation_feed_ep1";
-			skill=0.60000002;
-		};
-		class Item5
-		{
-			position[]={6483.5967,37.48,6090.5747};
-			azimut=-68.279198;
-			offsetY=0.2;
-			id=106;
-			side="EMPTY";
-			vehicle="CUP_A2_fuelstation_feed_ep1";
-			skill=0.60000002;
-		};
-		class Item6
-		{
-			position[]={6497.6914,37.48,6087.8315};
-			azimut=-70.606422;
-			offsetY=0.2;
-			id=107;
-			side="EMPTY";
-			vehicle="CUP_A2_fuelstation_feed_ep1";
-			skill=0.60000002;
-		};
-		class Item7
-		{
-			position[]={6496.7383,37.48,6085.4824};
-			azimut=-70.606422;
-			offsetY=0.2;
-			id=108;
-			side="EMPTY";
-			vehicle="CUP_A2_fuelstation_feed_ep1";
-			skill=0.60000002;
-		};
-		class Item8
-		{
-			position[]={6482.707,37.48,6093.064};
-			azimut=-68.279198;
-			offsetY=0.2;
-			id=109;
-			side="EMPTY";
-			vehicle="Land_CncBarrierMedium4_F";
-			skill=0.60000002;
-		};
-		class Item9
-		{
-			position[]={6479.9321,37.48,6086.2119};
-			azimut=-68.279198;
-			offsetY=0.2;
-			id=110;
-			side="EMPTY";
-			vehicle="Land_CncBarrierMedium4_F";
-			skill=0.60000002;
-		};
-		class Item10
-		{
-			position[]={6482.5347,37.48,6081.4434};
-			azimut=-155.83902;
-			offsetY=0.2;
-			id=111;
-			side="EMPTY";
-			vehicle="Land_CncBarrierMedium4_F";
-			skill=0.60000002;
-		};
-		class Item11
-		{
-			position[]={6489.3867,37.48,6078.4077};
-			azimut=-156.57468;
-			offsetY=0.2;
-			id=112;
-			side="EMPTY";
-			vehicle="Land_CncBarrierMedium4_F";
-			skill=0.60000002;
-		};
-		class Item12
-		{
-			position[]={6496.2798,37.48,6078.7969};
-			azimut=-68.279198;
-			offsetY=0.2;
-			id=113;
-			side="EMPTY";
-			vehicle="Land_CncBarrierMedium4_F";
-			skill=0.60000002;
-		};
-		class Item13
-		{
-			position[]={6498.7964,37.48,6085.8647};
-			azimut=-72.667801;
-			offsetY=0.2;
-			id=114;
-			side="EMPTY";
-			vehicle="Land_CncBarrierMedium4_F";
-			skill=0.60000002;
-		};
-		class Item14
-		{
-			position[]={6493.6777,37.48,6076.5};
-			azimut=-156.70482;
-			offsetY=0.2;
-			id=115;
-			side="EMPTY";
-			vehicle="Land_CncBarrierMedium_F";
-			skill=0.60000002;
-		};
 	};
 	class Markers
 	{
-		items=4;
+		items=3;
 		class Item0
 		{
 			position[]={6140.4678,85.32708,5941.604};
@@ -2250,14 +2071,6 @@ class Mission
 			position[]={263.93359,123.68,1416.0308};
 			name="respawn_east";
 			type="Empty";
-		};
-		class Item3
-		{
-			position[]={6489.9253,37.48,6085.0166};
-			name="Refuel, Repair, & Rearm Station";
-			text="Refuel, Repair, & Rearm Station";
-			type="b_service";
-			colorName="ColorBlack";
 		};
 	};
 };

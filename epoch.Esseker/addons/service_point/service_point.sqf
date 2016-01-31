@@ -5,7 +5,7 @@ private ["_folder","_servicePointClasses","_maxDistance","_costsFree","_message"
  
 //====================== general settings
 _folder = "addons\service_point\"; // folder where the service point scripts are saved, relative to the mission file
-_servicePointClasses = ["Land_CarService_F","fuelstation_feed_ep1"]; // service point classes (can be house, vehicle and unit classes)
+_servicePointClasses = ["Land_CarService_F","Land_Ind_FuelStation_Feed_EP1"]; // service point classes (can be house, vehicle and unit classes)
 _maxDistance = 10; // maximum distance from a service point for the options to be shown
 _costsFree = "free"; // text for no costs
 _message = "-- Vehicle Service Point --"; // message to be shown when in range of a service point (set to "" to disable)
