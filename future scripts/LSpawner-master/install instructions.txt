@@ -18,3 +18,26 @@ spawnClassChance_list = [
 ];
 
 ***INCLUDED CURRENT INIT FILE FOR SERVER***
+
+
+
+http://epochmod.com/forum/index.php?/topic/30746-mas-weapons-lootspawner-script-more-weapons/
+
+High loot table:
+
+https://github.com/pumpkinpieman/LSpawner/blob/master/LSLootLists_HighLoot.SQF
+
+ 
+
+Go into Lootspawner.SQF >
+
+Find the following code:
+
+ 
+
+//Buildings that can spawn loot go in this list
+#include "LSlootBuildings.sqf"
+//Loot goes in these lists
+#include "LSlootLists.sqf"
+
+#include "LSLootLists_HighLoot.SQF"
