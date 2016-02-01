@@ -1,0 +1,20 @@
+
+Create a folder in your epoch.Altis (or epoch.Chernarus) pbo called custom/LSpawner and copy all the files from the first post into it. 
+
+In your init.sqf, make sure it looks like this:
+
+if (isServer) then {
+    fn_getBuildingstospawnLoot = compile preProcessFileLineNumbers "custom\LSpawner\fn_LSgetBuildingstospawnLoot.sqf";
+    LSdeleter = compile preProcessFileLineNumbers "custom\LSpawner\LSdeleter.sqf";
+    execVM "custom\LSpawner\Lootspawner.sqf";
+};
+To edit the chances for loot to spawn, open Lootspawner.sqf and edit these lines. The explanation of each value is shown above those lines in Lootspawner.sqf:
+
+spawnClassChance_list = [
+[0, 13, 21, 24, 18, 22],	// civil
+[1, 22, 36, 28, 26, 18],	// military
+[2, 10, 21, 28, 26, 36],	// industrial
+[3, 12, 36, 36, -1, -1]		// research
+];
+
+***INCLUDED CURRENT INIT FILE FOR SERVER***
