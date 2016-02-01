@@ -1,0 +1,13 @@
+To use simply drop the helicrash.pbo inside @epochhive/addons/ (Same location as a3_epoch_server.pbo and a3_epoch_server_settings.pbo)
+
+http://epochmod.com/forum/index.php?/topic/34565-dayz-style-heli-crash-sites/
+
+
+Center Position:
+
+Chernarus:   [6968.66, 324.481, 8345.91]
+Altis:       [14939.9, 0.0534991, 15083.3]
+Bornholm:    [10058.3, 117.542, 9015.85]
+Stratis:     [4031.66, 110.605, 4222.18]
+Taviana      [12800,0,12800]
+Esseker      [6502.6406,6217.2461,0] keep radius less than 6200 or they will spawn off the map!!!!
