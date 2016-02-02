@@ -7,8 +7,8 @@ BuildingSlotsLimit = 1500; // Max building slots allowed. Warning! Higher the nu
 // Time based
 StaticDateTime[] = {0,0,0,8,0}; // {0,0,0,8,0} would forces the server to start at 8am each time it is started while allowing the year, month and day to stay real time. Any values left at 0 will result in no change.
 timeDifference = 0; // Server uses real time this will allow you to offset just the hour.
-timeMultiplier = 6; // Sets a time multiplier for in-game time. The command range is now capped at 0.1 - 120 to avoid performance problems.
-lootMultiplier = 0.7; // 1 = max loot bias. This controls how much loot can payout per Epoch loot container.
+timeMultiplier = 4; // Sets a time multiplier for in-game time. The command range is now capped at 0.1 - 120 to avoid performance problems.
+lootMultiplier = 0.6; // 1 = max loot bias. This controls how much loot can payout per Epoch loot container.
 // Events
 WeatherChangeTime = 1200; // This controls how fast the weather changes as well as how fast shipping containers and earthquakes happen.
 WeatherStaticForecast[] = {}; // Default: {75.5,0,{0,0,0},0,{1,1}}; // Clear day; {19,1,{1,1,40},1,{5,5}}; // Cold Foggy Rainy Overcast Windy; Format: {temp <scalar>,rain <scalar>,fog <array>,overcast <scalar>,wind <array>}
@@ -34,10 +34,10 @@ vehicleLockTime = 1800; // Controls how many seconds it takes to allow another p
 allowedVehiclesList[] = {
     {"C_Offroad_01_EPOCH",8},
     {"C_Quadbike_01_EPOCH",8},
-    {"C_Hatchback_01_EPOCH",10},
-    {"C_Hatchback_02_EPOCH",10},
+    {"C_Hatchback_01_EPOCH",5},
+    {"C_Hatchback_02_EPOCH",5},
     {"C_SUV_01_EPOCH",10},
-    {"C_Rubberboat_EPOCH",5},
+    {"C_Rubberboat_EPOCH",1},
     {"C_Rubberboat_02_EPOCH",5},
     {"C_Rubberboat_03_EPOCH",5},
     {"C_Rubberboat_04_EPOCH",5},
@@ -46,40 +46,40 @@ allowedVehiclesList[] = {
     {"C_Boat_Civil_01_EPOCH",5},
     {"C_Boat_Civil_01_police_EPOCH",5},
     {"C_Boat_Civil_01_rescue_EPOCH",5},
-    {"B_Heli_Light_01_EPOCH",2},
-    {"B_SDV_01_EPOCH",2},
-    {"B_MRAP_01_EPOCH",3},
-	{"I_MRAP_03_EPOCH", 3},	
+    {"B_Heli_Light_01_EPOCH",3},
+    {"B_SDV_01_EPOCH",0},
+    {"B_MRAP_01_EPOCH",10},
+	{"I_MRAP_03_EPOCH",10},	
     {"B_Truck_01_transport_EPOCH",1},
     {"B_Truck_01_covered_EPOCH",2},
     {"B_Truck_01_mover_EPOCH",1},
-    {"B_Truck_01_box_EPOCH",1},
+    {"B_Truck_01_box_EPOCH",6},
     {"O_Truck_02_covered_EPOCH",2},
     {"O_Truck_02_transport_EPOCH",1},
     {"O_Truck_03_covered_EPOCH",1},
     {"O_Truck_02_box_EPOCH",1},
     {"I_Heli_light_03_unarmed_EPOCH",1},
     {"O_Heli_Light_02_unarmed_EPOCH",1},
-    {"I_Heli_Transport_02_EPOCH",1},
-    {"O_Heli_Transport_04_EPOCH",1},
+    {"I_Heli_Transport_02_EPOCH",2},
+    {"O_Heli_Transport_04_EPOCH",2},
     {"O_Heli_Transport_04_bench_EPOCH",1},
     {"O_Heli_Transport_04_box_EPOCH",1},
-    {"O_Heli_Transport_04_covered_EPOCH",1},
-    {"B_Heli_Transport_03_unarmed_EPOCH",1},
-    {"jetski_epoch",7},
+    {"O_Heli_Transport_04_covered_EPOCH",2},
+    {"B_Heli_Transport_03_unarmed_EPOCH",2},
+    {"jetski_epoch",2},
     {"K01",2},
     {"K02",2},
     {"K03",2},
     {"K04",2},
-    {"ebike_epoch",7},
+    {"ebike_epoch",2},
     {"mosquito_epoch",5},
-	{"C_Heli_Light_01_civil_EPOCH",5}
+	{"C_Heli_Light_01_civil_EPOCH",7}
 };
 
 // Traders
 taxRate = 0.1; // controls the price increase for purchases
-starterTraderItems[] = { { "ItemSodaBurst", "meatballs_epoch", "MortarBucket", "CinderBlocks", "VehicleRepair", "CircuitParts", "ItemCorrugated", "PartPlankPack", "ItemRock", "ItemRope", "ItemStick" }, { 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5 } }; // Starter Items for fresh spawned trader first array is classnames second is quantity.
-NPCSlotsLimit = 60; // Max number of traders static or dynamic. Warning! Higher the number lower performance.
+starterTraderItems[] = { { "ItemSodaBurst", "meatballs_epoch", "MortarBucket", "CinderBlocks", "VehicleRepair", "CircuitParts", "ItemCorrugated", "PartPlankPack", "ItemRock", "ItemRope", "ItemStick" }, { 10, 10, 5, 5, 15, 5, 5, 5, 5, 5, 5 } }; // Starter Items for fresh spawned trader first array is classnames second is quantity.
+NPCSlotsLimit = 35; // Max number of traders static or dynamic. Warning! Higher the number lower performance.
 forceStaticTraders = true; // disables traders moving from work to home
 
 // Markers
