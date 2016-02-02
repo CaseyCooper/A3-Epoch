@@ -3,7 +3,7 @@ class Header
 {
  gameType = Sandbox;
  minPlayers = 1;
- maxPlayers = 100;
+ maxPlayers = 10;
 };
 respawn = "BASE";
 respawnDelay = 600;
@@ -74,7 +74,7 @@ class CfgEpochUAV
 class CfgEpochAirDrop
 {
 	AirDropFreq = 1200; //AirDropChance, to decide if Air drop occurs, will only be checked once per AirDropFreq time period, for each player. Min value = 120.
-	AirDropChance = 6; //Percentage chance of air drop, for current player. Checked every AirDropFreq and upon antagonists spawn trigger. -1 To disable.
+	AirDropChance = 15; //Percentage chance of air drop, for current player. Checked every AirDropFreq and upon antagonists spawn trigger. -1 To disable.
 };
 
 class CfgEpochCloak
