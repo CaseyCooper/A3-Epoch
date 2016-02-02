@@ -65,7 +65,7 @@ class CfgA3EAISettings {
 	//1: Generate AI uniform types from Epoch loot tables (Default)
 	//0: Uniforms defined by uniformTypes0, uniformTypes1, uniformTypes2, uniformTypes3
 	//dynamicUniformBlacklist: List of uniform classnames to ignore from Epoch loot tables.
-	generateDynamicUniforms = 0;
+	generateDynamicUniforms = 1;
 	dynamicUniformBlacklist[] = {};
 	
 	//1: Generate AI backpack types from Epoch loot tables (Default)
@@ -170,7 +170,7 @@ class CfgA3EAISettings {
 	launchersPerGroup = 1;
 	
 	//Enable or disable AI self-healing. Level 0 AI cannot self-heal. Affects: All AI infantry units (Default: 1). 
-	enableHealing = 1;
+	enableHealing = 0;
 	
 	//If enabled, A3EAI will remove all explosive ammo (missiles, rockets, bombs - but not HE rounds) from spawned AI air vehicles.  (Default: 1)
 	//Affects: All AI air vehicle types (patrols/custom/reinforcement). Does not affect UAV/UGVs.
@@ -212,7 +212,7 @@ class CfgA3EAISettings {
 	--------------------------------------------------------------------------------------------------------------------*/		
 	
 	//Upper limit of dynamic spawns on map at once. Set to 0 to disable dynamic spawns (Default: 15)
-	maxDynamicSpawns = 15;
+	maxDynamicSpawns = 8;
 	
 	//Minimum time (in seconds) that must pass between dynamic spawns for each player (Default: 900)
 	timePerDynamicSpawn = 900;
@@ -273,14 +273,14 @@ class CfgA3EAISettings {
 	
 	//Classnames of air vehicle types to use, with the maximum amount of each type to spawn.
 	airVehicleList[] = {
-		{"B_Heli_Light_01_armed_F",5},
+		{"B_Heli_Light_01_armed_F",0},
 		{"B_Heli_Transport_01_F",5},
 		{"B_Heli_Transport_03_F",2}
 	};
 	
 	//Maximum number of gunner units per air vehicle. Limited by actual number of available gunner positions. (Default: 2)
 	//Affects: All AI air vehicle patrols, including custom and reinforcement.
-	airGunnerUnits = 2; 
+	airGunnerUnits = 0; 
 	
 	//Probability of AI helicopter sucessfully detecting player if there is line-of-sight. AI helicopters will conduct a visual sweep upon arriving at each waypoint and some distance after leaving. (Default: 0.80)
 	//Affects: All AI air vehicle patrols, including custom and reinforcement.
@@ -308,7 +308,7 @@ class CfgA3EAISettings {
 
 	
 	//Global maximum number of active AI land vehicle patrols. Set at 0 to disable (Default: 0).	
-	maxLandPatrols = 10;
+	maxLandPatrols = 5;
 	
 	//Probability of spawning Level 0/1/2/3 AI land vehicle spawns. Probabilities should add up to 1.00		
 	levelChancesLand[] = {0.00,0.50,0.35,0.15};
@@ -353,7 +353,7 @@ class CfgA3EAISettings {
 	--------------------------------------------------------------------------------------------------------------------*/
 
 	//Maximum allowed number of simultaneous active reinforcements (Default: 5)
-	maxAirReinforcements = 5;
+	maxAirReinforcements = 1;
 	
 	//Air vehicles to use as reinforcement vehicles. Default: {"B_Heli_Transport_01_F","B_Heli_Light_01_armed_F"}
 	//Armed air vehicles will detect and engage players within reinforcement area. Unarmed air vehicles will deploy an AI paradrop group.
