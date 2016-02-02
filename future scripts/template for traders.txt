@@ -1,0 +1,32 @@
+Esseker traders template
+
+
+case "australia":{
+
+_staticCoords = [
+
+[[19031.8, 33967, 0],275,false],	//these coordinates will replace the spawn zone epoch traders. if you want to keep them just edit the coords slightly
+
+[[34757.4, 13432.1, 0],313.34,false],
+
+[[24407.3, 13957.4, 0],231.976,false],
+
+[[4077.59, 19458.2, 0],93.5839,false]
+
+];
+
+_blacklistedAreas = [
+
+[[19031.8, 33967, 0],1000],	// this makes sure that you don`t have any random spawning blackmarket traders within a radius of 1000m from the safezone
+
+[[34757.4, 13432.1, 0]1000], //you can add more locations in case you don`t want traders to be spawning in specific spots
+
+[[24407.3, 13957.4, 0],1000],
+
+[[4077.59, 19458.2, 0],1000]
+
+];
+
+_spawnarea = 18000; //distance to search for trader spawn positions - maximum distance to map center
+
+};
