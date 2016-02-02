@@ -1,3 +1,8 @@
+//blackmarket trader
+  #include "trader\Halv_defines.hpp"
+  #include "trader\tradedialog.hpp"
+  #include "trader\HSPricing.hpp"
+
 author = "Epoch Mod Team";
 class Header
 {

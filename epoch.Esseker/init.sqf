@@ -17,3 +17,7 @@ if(hasInterface) then{
 //removes crypto when service point is used
 	[] execVM "custom\HALV_takegive_crypto_init.sqf";
 
+//blackmarket trader
+	[] execVM "trader\init.sqf";
+	[] execVM "trader\HALV_takegive_crypto_init.sqf";
+	[] execVM "trader\resetvehicleammo.sqf";
