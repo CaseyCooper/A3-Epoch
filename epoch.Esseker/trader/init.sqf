@@ -38,42 +38,19 @@ switch(toLower worldName)do{
 			//minimal array
 			[[0,0,0],0]
 */
-			[[18459.1,14259.2,0],340.199,false], //trader by mine
-			[[13319,14523.9,0],143.067,false], //trader by stavros
-			[[6193.02,16828.7,0],1.52142,false] //trader by kore
-		];
-		_blacklistedAreas = [
-							/*[position,area]*/
-			[[18451.9, 14278.1, 0],500],
-			[[13326.5, 14515.2, 0],500],
-			[[6192.46, 16834, 0],500]
-		];
-		//distance to search for trader positions
-		_spawnarea = 12500;
-	};
-	case "stratis":{_staticCoords = [];_blacklistedAreas = [[[4089.82, 4597.71, 0],500]];_spawnarea = 6000;};
-	case "bornholm":{
-		_staticCoords = [];
-		_blacklistedAreas = [
-			[[14121.2,11331.5,0],500],
-			[[1322.18,8733.92,0],500],
-			[[15639.3,191.995,0],500]
-		];
-		_spawnarea = 12500;
-	};
-	case "chernarus":{
+	case "esseker":{
 		_staticCoords = [
-			[[4584.02,4521.47,0],180.729,false],//trader by Kozlovka
-			[[12076.8,5112.95,0],281.836,false],//trader between Msta & Tulga
-			[[10676.7,9437.48,0],120.482,false] //trader by Dubrovka
-		];
+			[[3874.3315,149.70277,9214.1563],275,false],	
+			[[9842.7373,7.4859176,4845.0244],313.34,false],
+			[[1687.4927,212.29509,4249.2959],231.976,false]
+		];	
 		_blacklistedAreas = [
 			[[4569.52, 4524.24, 0],500],
 			[[12077.8, 5121.92, 0],500],
 			[[10688.6, 9428.98, 0],500]
 		];
-		_spawnarea = 7000;
-	};
+		_spawnarea = 3000;
+];
 	default{_staticCoords = [];_blacklistedAreas = [[[0,0,0],0]];_spawnarea = 7000;};
 };
 
