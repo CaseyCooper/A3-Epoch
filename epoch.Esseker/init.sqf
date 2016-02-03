@@ -27,3 +27,6 @@ if(hasInterface) then{
 call compile preProcessFileLineNumbers "cmEarplugs\config.sqf";
 
 //cmEARPLUGS CODE END	
+
+//Intro Script
+[] execVM "addons\script_intro.sqf";
