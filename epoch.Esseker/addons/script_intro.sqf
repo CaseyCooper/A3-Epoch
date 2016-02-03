@@ -29,7 +29,7 @@ _role8names = ["192.111.144.6"];
 _role9 = "Website:";
 _role9names = ["www.crftgaming.org"];
 _role10 = "Controls:";
-_role10names = ["Space Bar - Interact <br/> I Key - Player Menu <br/> SHIFT+H - Holster <br/> CTRL+H - UnHolster <br/> Insert Key - Ear Plugs <br/> Phone Booth & ATM Are Banks <br/>"];
+_role10names = ["Space Bar - Interact <br/> I Key - Player Menu <br/> SHIFT+H - Holster <br/> CTRL+H - UnHolster <br/> Insert Key - Ear Plugs <br/> Phone Booth - Banks <br/>"];
 
 {
 sleep 2;
