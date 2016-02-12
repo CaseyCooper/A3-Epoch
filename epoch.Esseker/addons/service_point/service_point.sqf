@@ -5,8 +5,8 @@ private ["_folder","_servicePointClasses","_maxDistance","_costsFree","_message"
  
 //====================== general settings
 _folder = "addons\service_point\"; // folder where the service point scripts are saved, relative to the mission file
-_servicePointClasses = ["Land_CarService_F"]; // service point classes (can be house, vehicle and unit classes)
-_maxDistance = 10; // maximum distance from a service point for the options to be shown
+_servicePointClasses = ["Land_CarService_F","O_Truck_02_box_EPOCH"]; // service point classes (can be house, vehicle and unit classes)
+_maxDistance = 20; // maximum distance from a service point for the options to be shown
 _costsFree = "free"; // text for no costs
 _message = "-- Vehicle Service Point --"; // message to be shown when in range of a service point (set to "" to disable)
 _actionColour = "#0096ff"; //the colour of the scroll action Blue: "#0096ff"
